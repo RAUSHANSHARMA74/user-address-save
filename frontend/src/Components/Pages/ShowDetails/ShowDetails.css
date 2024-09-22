@@ -1,0 +1,79 @@
+.showdetails {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #001d31;
+  color: white;
+  width: 80%;
+  margin: 50px auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-card {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #193547;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  color: white;
+}
+
+.user-card:hover {
+  background-color: #245b74;
+}
+
+.user-info {
+  margin-bottom: 10px;
+}
+.name {
+  color: white;
+}
+
+.address-details {
+  margin-top: 10px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  background-color: #2c3e50;
+}
+
+.address-details.active {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.address-details h4 {
+  margin: 0 0 5px;
+  color: white;
+}
+
+.address-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.address-details li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s;
+  color: white;
+}
+
+.address-details li:hover {
+  background-color: #3a4d5e;
+  color: white;
+}
